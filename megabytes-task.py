@@ -1,10 +1,17 @@
-""" This program converts gigabytes into megabytes. It demonstrates use of a constant and the .format() function. """
+""" This is my madlib program where we are using varables and inputs and outputs to form a sentance """ 
 
-# Set the number of megabytes in a gigabyte
-MB = 1024
+#Inputs for the madlib
 
-# get the number of gigabytes from the user
-gb = int(input("How many gigabytes?"))
+name = input("Enter a name")
+subject = input("Enter a class")
+reason = input("Enter a reason")
+whofrom = input("Enter who from") 
+time = input("Enter when they are coming back")
 
-# print out the answer
-print("There are {} megabytes in {} gigabytes".format(gb*MB, gb))
+#Madlib is thinking
+print("Thinking.... Here's my madlib")
+
+#Text for the sentence 
+
+print("To whom it may concern,\n Please excuse {} from{} today. He is suffering from a bad case of the{} which has been caused by the{}.{} should recover and be\
+back at school{}. \n Kind regards \n{}'s Turtle.".format(name, subject, reason, whofrom, name, time, name)) 
