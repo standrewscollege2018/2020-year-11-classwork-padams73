@@ -6,8 +6,9 @@ keep_asking = True
 
 while keep_asking == True:
         name = input("Enter your name: ")
-        
-        if any((c in chars) for c in name):
+        if name == "":
+                print("End a name")
+        elif any((c in chars) for c in name):
                 print("Enter a valid name")
         elif name.lower() == "end":
                 keep_asking = False
